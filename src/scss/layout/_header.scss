@@ -1,0 +1,98 @@
+.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: auto;
+    height: 8rem;
+  }
+}
+.nav_primary {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  visibility: hidden;
+  a {
+    color: #212121;
+  }
+
+  @include desktop {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  a {
+    padding: 0.5rem 1rem;
+  }
+  opacity: 0;
+  height: 0;
+  transition: visibility 0.2s, opacity 0.2s linear, height 0.2s linear;
+}
+
+.touch-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .menu {
+    @include desktop {
+      display: none;
+    }
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.nav_secundary {
+  position: fixed;
+  z-index: 3;
+  bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 0rem 1rem 1rem 0rem;
+  a {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: $blanco;
+    font-weight: 600;
+    padding: 1rem 3rem;
+  }
+}
+
+//Touch menu ocult
+.menu {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.nav {
+  &.show {
+    .nav_primary {
+      height: auto;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

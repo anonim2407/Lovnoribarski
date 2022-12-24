@@ -1,0 +1,86 @@
+.creat {
+  color: #212121;
+  margin: 0 10rem 10rem 10rem;
+border-radius: 2rem;
+
+  .form {
+    background-color: rgb(0, 255, 255);
+    width: 100%;
+    
+  border-radius: 2rem;
+  }
+}
+
+.login-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  
+  button {
+    border: none;
+    padding: 4rem 3rem;
+    background: rgba(0, 255, 255, 0.466);
+    &:first-of-type {
+      border-radius: 2rem 0 0 0;
+    }
+    &:last-of-type {
+      border-radius: 0 0 0 2rem;
+    }
+    &:hover {
+      background: rgb(0, 255, 255);
+    }
+  }
+}
+
+//FORMUALARIO
+
+form {
+  padding: 2rem;
+  
+  label,
+  input, select {
+    display: block;
+    margin: 0;
+  }
+  label{
+    font-weight: 600;
+  }
+  input,textarea,select{
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid $grisOscuro;
+    border-radius: 5px;
+    
+  }
+  select{
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+
+  
+}
+.boton{
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    background-color: rgb(0, 255, 34);
+    border: 1px solid $blanco;
+    border-radius: 1rem;
+    &:hover{
+        cursor: pointer;
+        background-color: darken($color: rgb(0, 255, 34) , $amount: 4);
+    }
+}
+//Errores de formulario
+.error{
+  text-align: center;
+  margin: 1rem;
+  color: red;
+  font-weight: 600;
+}
+
+
+
+

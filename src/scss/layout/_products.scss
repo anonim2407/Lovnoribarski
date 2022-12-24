@@ -1,0 +1,129 @@
+.product_list {
+  display: grid;
+  @include tablet {
+    grid-template-columns: 50% 50%;
+  }
+  @include desktop {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  .product {
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+    justify-items: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(7px);
+    background-color: hsla(0, 0%, 100%, 0.3);
+    height: 60rem;
+    border-radius: 0.8rem;
+
+    img {
+      width: auto;
+      height: auto;
+      max-height: 30rem;
+      max-width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      scale: 1;
+      transition: all 0.5s;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: $verde;
+    }
+    p {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+  a {
+    &:hover {
+      .product img {
+        scale: 1.1;
+      }
+    }
+  }
+  article {
+    margin: 2rem;
+    padding: 2rem;
+  }
+}
+
+.product_description {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .recuadro_imagen-des {
+    position: relative;
+    width: auto;
+    max-height: 60rem;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: auto;
+      max-width: 100%;
+
+      max-height: 60rem;
+
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transition: all 0.3s;
+    }
+  }
+  div {
+    display: grid;
+    margin: 5rem 0;
+  }
+  p {
+    margin: 0.5rem;
+  }
+  .name {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #9bad4c;
+  }
+  .number,
+  .description,
+  .description_use {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .price {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #9bad4c;
+  }
+  @include tablet {
+    .name,
+    .price {
+      font-size: 4rem;
+    }
+    .number,
+    .description,
+    .description_use {
+      font-size: 2rem;
+    }
+  }
+}
+
+//**PRUEBAAAAAA**//
+.recuadro_imagen {
+  display: flex;
+  justify-content: center;
+  min-width: 20rem;
+  min-height: 20rem;
+  img {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}

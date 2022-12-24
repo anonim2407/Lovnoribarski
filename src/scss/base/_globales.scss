@@ -1,0 +1,72 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 8rem 0 0 0;
+  font-family: $fuente_principal;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  background-color: #212121;
+  color: $letras; 
+;
+}
+p {
+  font-size: 2rem;
+}
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.contenedor2 {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: $letras;
+}
+
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $fuente_principal;
+  margin: calc($separacion / 2) 0;
+  font-weight: 300;
+  text-align: center;
+
+  
+}
+
+
+h1 {
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10rem;
+  color: $verdeOs;
+}
+h2 {
+  font-size: 3.4rem;
+  
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.6rem;
+}
