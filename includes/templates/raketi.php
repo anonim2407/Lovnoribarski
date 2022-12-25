@@ -11,7 +11,7 @@ $resultadoConsulta = mysqli_query($db, $query);
             <a href="/descripcion_producto.php?id=<?php echo $propiedad['id']; ?>&type=raketi">
             <article class="product">
                 <div class="recuadro_imagen">
-                    <img src="/admin/imagenes/<?php echo $propiedad['image'] ?>" alt="">
+                    <img src="/build/img/imagenes/<?php echo $propiedad['image'] ?>" alt="">
                 </div>
                 <h2><?php echo $propiedad['name'] ?> </h2>
                 <p><?php echo $propiedad['price'] ?> лв</p>

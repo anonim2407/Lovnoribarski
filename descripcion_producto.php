@@ -44,7 +44,7 @@ $propiedad = mysqli_fetch_assoc($resultadoConsulta);
         <section class=" contenedor">
             <article class="product_description">
                 <div class="recuadro_imagen-des">
-                    <img src="/admin/imagenes/<?php echo $propiedad['image'] ?>" alt="">
+                    <img src="/build/img/imagenes/<?php echo $propiedad['image'] ?>" alt="">
                 </div>
                 <div>
                     <p class="name"><?php echo $propiedad['name'] ?> </p>

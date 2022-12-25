@@ -10,7 +10,7 @@ $resultadoConsulta = mysqli_query($db, $query);
         <?php while ($propiedad = mysqli_fetch_assoc($resultadoConsulta)) : ?>
             <a href="/descripcion_producto.php?id=<?php echo $propiedad['id']; ?>&type=parti">
             <article class="product">
-                <img src="/admin/imagenes/<?php echo $propiedad['image'] ?>" alt="">
+                <img src="/build/img/imagenes/<?php echo $propiedad['image'] ?>" alt="">
                 <h2><?php echo $propiedad['name'] ?> </h2>
                 <p><?php echo $propiedad['price'] ?> лв</p>
 
