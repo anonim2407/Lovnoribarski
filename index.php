@@ -22,43 +22,43 @@ $db = conectarDb();
 
 <body>
     <nav class="nav_secundary">
-        <a href="#nachalo">Начало</a>
+        <a href="/index.php">Начало</a>
         <a href="#kontakt">За нас</a>
+        <a href="https://www.facebook.com/aresprovadia"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg></a>
 
-        
+
     </nav>
     <header id="nachalo">
         <div class="fondo-header">
-        <?php
-        include 'includes/header.php'
-        ?>
-        
+            <?php
+            include 'includes/header.php'
+            ?>
+
         </div>
     </header>
-    <main class="contenedor2">
-        <?php
-        include 'includes/templates/baterii.php';
-        include 'includes/templates/rimski.php';
-        include 'includes/templates/raketi.php';
-        ?>
-
-        <?php
-        include 'includes/templates/piratki.php'
-        ?>
-        <?php
-        include 'includes/templates/dimki.php'
-        ?>
-        <?php
-        include 'includes/templates/parti.php'
-        ?>
-        <?php
-        include 'includes/templates/scenichna.php'
-        ?>
+    <main class="contenedor items">
+        <div class="items_horizontal">
+            <a href="/apartado_baterii.php" class="item item1">
+                <p>Пиробатерии</p>
+                <p class="botones">Виж тук</p>
+            </a>
+            <a href="/apartado_rimski.php" class="item item2">
+                <p>Римски свещи</p>
+                <p class="botones">Виж тук</p>
+            </a>
+        </div>
+        <a href="/apartado_raketi.php" class="item item3">
+            <p>Ракети</p>
+            <p class="botones">Виж тук</p>
+        </a>
     </main>
 
     <?php
-        include 'includes/footer.php'
-        ?>
+    include 'includes/footer.php'
+    ?>
 
     <script src="/src/js/app.js"></script>
 

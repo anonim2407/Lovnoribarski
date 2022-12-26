@@ -7,12 +7,12 @@
   border-spacing: 1;
   text-align: center;
   thead {
-    background-color: rgba(0, 255, 255, 0.466) ;
-    tr{
-    border: 1px solid black;
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding: 3rem;
+    background-color: rgba(0, 255, 255, 0.466);
+    tr {
+      border: 1px solid black;
+      font-size: 2rem;
+      text-transform: uppercase;
+      padding: 3rem;
     }
   }
   tbody {
@@ -28,18 +28,16 @@
       flex-direction: column;
       align-items: center;
       gap: 2rem;
-      margin: 0 ;
+      margin: 0;
     }
     .contenido-tabla {
       border: 1px solid $negro;
       margin: 3rem;
-      
     }
-    form{
+    form {
       margin: auto;
     }
   }
-  
 }
 
 .imagen_small {
@@ -47,35 +45,106 @@
   width: 20rem;
 }
 
-.boton-admin-actualizar{
+.boton-admin-actualizar {
   margin: 0 auto;
   padding: 1rem 0;
   background-color: greenyellow;
   border-radius: 1rem;
   width: 100%;
 }
-.boton-admin-borrar{
+.boton-admin-borrar {
   margin: 0 auto;
   border: none;
   background-color: red;
   width: 100%;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
 
-.nav_propiedades{
+.nav_propiedades {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  a{
+  a {
     padding: 1rem;
     background: rgba(0, 255, 255, 0.466);
     border-radius: 1rem;
-    &:hover{
+    &:hover {
       cursor: pointer;
-      background:  rgba(0, 255, 255, 0.774);
+      background: rgba(0, 255, 255, 0.774);
     }
   }
+}
 
+//**INDICE APARTADOS**//
+@include tablet {
+  .items {
+    padding: 8rem 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    .items_horizontal {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+.item1 {
+  --opacidad-negro: 0.2;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, var(--opacidad-negro)),
+      rgba(0, 0, 0, var(--opacidad-negro))
+    ),
+    url("/build/img/Apartado_scenichna.webp");
+
+}
+
+.item2 {
+  --opacidad-negro: 0.2;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, var(--opacidad-negro)),
+      rgba(0, 0, 0, var(--opacidad-negro))
+    ),
+    url("/build/img/galeria/gal4.webp");
+
+}
+.item3 {
+  --opacidad-negro: 0.2;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, var(--opacidad-negro)),
+      rgba(0, 0, 0, var(--opacidad-negro))
+    ),
+    url("/build/img/galeria/gal1.webp");
+
+}
+.item {
+  margin: 2rem;
+  height: 50rem;
+  width: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .botones{
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.767);
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.767);
+  }
 }

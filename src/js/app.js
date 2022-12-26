@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     eventListeners();
-    scrollNav();
-    scrollNav2();
+    //  scrollNav();
+  //  scrollNav2();
     ocultarMenu();
 });
 
