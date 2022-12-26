@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {   // PARA BORRAR LAS FOTOS
         $resultado = mysqli_query($db, $query);
         $propiedad = mysqli_fetch_assoc($resultado);
 
-        unlink('imagenes/' . $propiedad['image']);
+        unlink('../build/img/imagenes/' . $propiedad['image']);
 
         //Elimina la propiedad
         $query = "DELETE FROM " . $type . " WHERE id = ${id};";
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {   // PARA BORRAR LAS FOTOS
                         <td><?php echo $propiedad['description'] ?></td>
                         <td><?php echo $propiedad['description_use'] ?></td>
                         <td><?php echo $propiedad['kategory'] ?></td>
-                        <td class="imagen-tabla"><img src="/admin/imagenes/<?php echo $propiedad['image'] ?>"></td>
+                        <td class="imagen-tabla"><img src="/build/img/imagenes/<?php echo $propiedad['image'] ?>"></td>
                         <td class="botones">
 
                             <a class="boton-admin-actualizar" href="propiedades/actualizar.php?id=<?php echo $propiedad['id']; ?>&type=<?php echo $type?>">Актуализирай</a>
