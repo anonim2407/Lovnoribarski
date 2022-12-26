@@ -1,5 +1,5 @@
-<div class="footer-pr">
-    <h3>Констакти</h3>
+<div id="kontakt" class="footer-pr">
+    <h3>За нас</h3>
     <div class="footer contenedor"> 
          <div class="contact">
             <p>Телефон за връзка: 0888474500</p>
@@ -9,3 +9,4 @@
         </div>
     </div>
 </div>
+<script src="/src/js/app.js"></script>

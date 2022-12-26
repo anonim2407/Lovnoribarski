@@ -24,14 +24,7 @@ $propiedad = mysqli_fetch_assoc($resultadoConsulta);
 </head>
 
 <body>
-    <nav class="nav_secundary">
-        <a href="/">Начало</a>
-        <a href="#">За нас</a>
-        <a href="#">Контакти</a>
-        <?php if ($auth) : ?>
-            <a href="/cerrar-sesion.php">Cerrar Sesión</a>
-        <?php endif; ?>
-    </nav>
+
     <header>
         <?php
         include 'includes/header.php'
@@ -58,7 +51,9 @@ $propiedad = mysqli_fetch_assoc($resultadoConsulta);
 
     </main>
     <script src="/src/js/app.js"></script>
-
+<?php
+    include 'includes/footer.php'
+?>
 </body>
 
 </html>

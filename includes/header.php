@@ -1,5 +1,5 @@
-<div class="header ">
-    <div class="nav contenedor">
+<div class="header">
+    <div class="nav">
         <div class="touch-bar">
             <a href="/">
                 <img class="logo" src="/build/img/logo.webp" alt="">
@@ -23,3 +23,4 @@
 
 
 </div>
+<script src="/src/js/app.js"></script>

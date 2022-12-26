@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {   // PARA BORRAR LAS FOTOS
         $resultado = mysqli_query($db, $query);
         $propiedad = mysqli_fetch_assoc($resultado);
 
-        unlink('imagenes/' . $propiedad['image']);
+        unlink('../build/img/imagenes/' . $propiedad['image']);
 
         //Elimina la propiedad
         $query = "DELETE FROM " . $type . " WHERE id = ${id};";

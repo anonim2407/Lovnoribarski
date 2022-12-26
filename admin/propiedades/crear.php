@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($error)) {
 
         //CREAMOS LA CARPETA PARA LAS IMAGENES
-        $carpetaImagenes = '../imagenes/';
+        $carpetaImagenes = '../../build/img/imagenes/';
 
         if (!is_dir($carpetaImagenes)) {
             mkdir($carpetaImagenes);
@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         //GENERAMOS NOMBRE UNICO DE LA IMAGEN
-        $nombreImagen = md5(uniqid(rand(), true)) . ".jpg";
+        $nombreImagen = md5(uniqid(rand(), true)) . ".webp";
 
 
         //SUBIMOS LA IMAGEN

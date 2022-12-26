@@ -22,18 +22,18 @@ $db = conectarDb();
 
 <body>
     <nav class="nav_secundary">
-        <a href="/">Начало</a>
-        <a href="#">За нас</a>
-        <a href="#">Контакти</a>
+        <a href="#nachalo">Начало</a>
+        <a href="#kontakt">За нас</a>
+
         
     </nav>
-    <header>
+    <header id="nachalo">
+        <div class="fondo-header">
         <?php
         include 'includes/header.php'
         ?>
-        <?php
-        include 'includes/slider.php'
-        ?>
+        
+        </div>
     </header>
     <main class="contenedor2">
         <?php

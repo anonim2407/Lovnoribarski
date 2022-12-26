@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     eventListeners();
     scrollNav();
+    scrollNav2();
     ocultarMenu();
 });
 
@@ -25,6 +26,20 @@ function navResponsive2() {
 
 function scrollNav() { //cuando le demos click al la navegacion nos lleva a ese apartado deslizandose por la pagina
     const enlaces = document.querySelectorAll('.nav_primary')
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', function (e) {
+            e.preventDefault();
+
+
+            const seccionScroll = e.target.attributes.href.value;
+            const seccion = document.querySelector(seccionScroll);
+            seccion.scrollIntoView({ behavior: "smooth" });
+        });
+    });
+}
+
+function scrollNav2() { //cuando le demos click al la navegacion nos lleva a ese apartado deslizandose por la pagina
+    const enlaces = document.querySelectorAll('.nav_secundary')
     enlaces.forEach(enlace => {
         enlace.addEventListener('click', function (e) {
             e.preventDefault();
